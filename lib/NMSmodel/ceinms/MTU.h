@@ -136,7 +136,7 @@ namespace ceinms {
         double getPercentFastTwitch() const { return percentFastTwitch_; }
         void setMuscleMass(double muscleMass);
         double getMuscleMass() const { return muscleMass_; }
-		inline double computeHeatRate();
+		double computeHeatRate();
 		void setParametersToComputeHeatRate(double percentFastTwitch,
 			double maxContractionVelocity,
 			double optimalFibreLength,
@@ -151,12 +151,12 @@ namespace ceinms {
         void updateLastFibreVelocityValue(double time);
         void resetState();
 
-		inline double computeAct_MainHeatRate();
-		inline double computeShorteningHeatCoeST();
-		inline double computeShorteningHeatCoeFT();
-		inline double computeShorteningHeatRate();
-		inline double computeLengtheningHeatRate();
-		inline double computeWorkRate();
+		double computeAct_MainHeatRate();
+		double computeShorteningHeatCoeST();
+		double computeShorteningHeatCoeFT();
+		double computeShorteningHeatRate();
+		double computeLengtheningHeatRate();
+		double computeWorkRate();
 
         std::string id_;
         double emDelay_;
